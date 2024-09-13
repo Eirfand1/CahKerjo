@@ -12,7 +12,7 @@ const HeroComponent = () => {
           </p>
           <Button className="bg-info rounded-lg font-bold md:text-xl border-info  text-white h-14">
             <Link to="/jobs" className="w-full h-full flex items-center">
-              Cari Gawean idamanmu
+              CARI GAWEAN 
             </Link>
           </Button>
         </div>

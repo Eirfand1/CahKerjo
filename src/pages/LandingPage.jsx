@@ -20,15 +20,13 @@ const LandingPage = () => {
          ) : (
             <>
                <HeroComponent />
-               <div className="my-10">
+               <div className="my-10 mx-4">
                   <h1 className="md:text-4xl text-2xl text-center font-bold">Bidang Gawe Populer</h1>
                   <div className="flex flex-wrap my-10 gap-4 justify-center items-center">
                      {data.map((item) => (
-                        <Card key={item._id} className="bg-accent  rounded-full">
-                           <Card.Body className="md:p-5 p-3">
-                              <p className="font-bold text-white">{item.title}</p>
-                           </Card.Body>
-                        </Card>
+                        <div key={item._id} className="bg-accent p-3 text-md rounded-full">
+                           <p className="font-semibold text-sm text-white">{item.title}</p>
+                        </div>
                      ))}
                   </div>
                </div>
