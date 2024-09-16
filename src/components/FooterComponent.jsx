@@ -1,28 +1,43 @@
-import { Footer } from "react-daisyui"
-const FooterComponent  = () => {
-   return(
-      <Footer className="p-10 bg-neutral-content text-neutral" >
-      <div>
-        <Footer.Title>Services</Footer.Title>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+import React from "react";
+import { Footer } from "react-daisyui";
+import { Link } from "react-router-dom";
+
+const FooterComponent = () => {
+  return (
+    <Footer className="p-10 bg-neutral-800 text-neutral-content">
+      <div className="footer max-w-6xl mx-auto">
+        <div>
+          <Footer.Title>Cah Kerjo</Footer.Title>
+          <p className="max-w-xs mt-2">Platform penghubung pencari kerja dan perekrut terpercaya di Indonesia. Temukan peluang karir terbaik Anda bersama kami.</p>
+        </div>
+        <div>
+          <Footer.Title>Layanan</Footer.Title>
+          <Link to="/jobs">Cari Lowongan</Link>
+          <a className="link link-hover">Pasang Lowongan</a>
+          <a className="link link-hover">Tips Karir</a>
+          <a className="link link-hover">Pelatihan Skill</a>
+        </div>
+        <div>
+          <Footer.Title>Perusahaan</Footer.Title>
+          <Link to="/about">Tentang Kami</Link>
+          <a className="link link-hover">Hubungi Kami</a>
+          <a className="link link-hover">Karir di Cah Kerjo</a>
+          <a className="link link-hover">Kemitraan</a>
+        </div>
+        <div>
+          <Footer.Title>Legal</Footer.Title>
+          <a className="link link-hover">Syarat dan Ketentuan</a>
+          <a className="link link-hover">Kebijakan Privasi</a>
+          <a className="link link-hover">Kebijakan Cookie</a>
+        </div>
       </div>
-      <div>
-        <Footer.Title>Company</Footer.Title>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </div>
-      <div>
-        <Footer.Title>Legal</Footer.Title>
-        <a className="link link-hover">Terms of use</a>
-        <a className="link link-hover">Privacy policy</a>
-        <a className="link link-hover">Cookie policy</a>
+      <div className="footer footer-center p-4 bg-base-300 text-base-content mt-8">
+        <div>
+          <p>Copyright © {new Date().getFullYear()} - All rights reserved by Cah Kerjo</p>
+        </div>
       </div>
     </Footer>
-   )
-}
-export default FooterComponent
+  );
+};
+
+export default FooterComponent;

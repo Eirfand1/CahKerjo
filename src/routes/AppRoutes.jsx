@@ -4,6 +4,7 @@ import LandingPage from '../pages/LandingPage'
 import NotFound from '../pages/NotFound'
 import JobsList from '../pages/JobsList'
 import JobDetail from '../pages/JobDetail'
+import About from '../pages/About'
 
 const AppRoutes = () => {
    return (
@@ -12,6 +13,7 @@ const AppRoutes = () => {
        <Route path='/jobs' element={<JobsList/>}/>
        <Route path='/jobs/:id' element={<JobDetail/>}/>
        <Route path='*' element={<NotFound/>}/>
+       <Route path='/about' element={<About/>}/>
      </Routes>  
    )
 }
